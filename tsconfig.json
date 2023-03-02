@@ -1,0 +1,35 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Node 18",
+	"extends": "@tsconfig/node18/tsconfig.json",
+	"include": ["**/*.ts", "**/*.tsx"],
+	"compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ES2019"],
+		"types": ["vitest/globals"],
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"target": "ES2019",
+		"strict": true,
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"paths": {
+			"app/*": ["app/*"],
+			"components/*": ["components/*"],
+			"constants/*": ["constants/*"],
+			"emails/*": ["emails/*"],
+			"data/*": ["data/*"],
+			"hooks/*": ["hooks/*"],
+			"lib/*": ["lib/*"],
+			"styles/*": ["styles/*"],
+			"utils/*": ["utils/*"]
+		},
+		"skipLibCheck": true,
+
+		"noEmit": true
+	}
+}
