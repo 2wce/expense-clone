@@ -5,7 +5,7 @@ import { migrate as migrateinvestments } from './investments'
 import { migrate as migratesubscriptions } from './subscriptions'
 import type { PrismaClient } from '@prisma/client'
 
-export interface ProgressReport {
+export type ProgressReport = {
   model: string
   processed: number
   totalCount: number
