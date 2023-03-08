@@ -2,19 +2,10 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Node 18",
   "extends": "@tsconfig/node18/tsconfig.json",
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
+  "include": ["**/*.ts", "**/*.tsx"],
   "compilerOptions": {
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ES2019"
-    ],
-    "types": [
-      "vitest/globals"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "types": ["vitest/globals"],
     "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "preserve",
@@ -27,39 +18,19 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "app/*": [
-        "app/*"
-      ],
-      "components/*": [
-        "components/*"
-      ],
-      "constants/*": [
-        "constants/*"
-      ],
-      "emails/*": [
-        "emails/*"
-      ],
-      "data/*": [
-        "data/*"
-      ],
-      "hooks/*": [
-        "hooks/*"
-      ],
-      "lib/*": [
-        "lib/*"
-      ],
-      "styles/*": [
-        "styles/*"
-      ],
-      "utils/*": [
-        "utils/*"
-      ]
+      "app/*": ["app/*"],
+      "components/*": ["components/*"],
+      "constants/*": ["constants/*"],
+      "emails/*": ["emails/*"],
+      "data/*": ["data/*"],
+      "hooks/*": ["hooks/*"],
+      "lib/*": ["lib/*"],
+      "styles/*": ["styles/*"],
+      "utils/*": ["utils/*"]
     },
     "skipLibCheck": true,
     "noEmit": true,
     "incremental": true
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
